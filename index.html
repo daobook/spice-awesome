@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ASPICE 学习</title>
+    <title>ASPICE 学习笔记</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
   <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -403,8 +403,28 @@ commentsRunWhenDOMLoaded(addUtterances);
             <nav id="bd-toc-nav">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
+  <a class="reference internal nav-link" href="#spice-center">
+   SPICE Center
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#automotive-spice">
+     Automotive SPICE®
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Automotive SPICE 过程评估/参考模型
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     术语
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -418,10 +438,89 @@ commentsRunWhenDOMLoaded(addUtterances);
               <div>
                 
   <div class="section" id="aspice">
-<h1>ASPICE 学习<a class="headerlink" href="#aspice" title="永久链接至标题">¶</a></h1>
+<h1>ASPICE 学习笔记<a class="headerlink" href="#aspice" title="永久链接至标题">¶</a></h1>
 <p>ASPICE 标准官方网站：🔎 <a class="reference external" href="https://intacs.info/index.php">intacs</a> 🔎 <a class="reference external" href="https://intacs.info/index.php/spice-center">SPICE Center</a> 🔎 <a class="reference external" href="http://www.automotivespice.com/">Automotive SPICE</a>。</p>
+<div class="section" id="spice-center">
+<h2>SPICE Center<a class="headerlink" href="#spice-center" title="永久链接至标题">¶</a></h2>
+<p><a class="reference external" href="https://intacs.info/index.php/spice-center">SPICE Center</a> 介绍了 SPICE 评估模型和参考模型。</p>
+<p>SPICE 最初是由欧盟资助的一个项目。这个项目的主要目标是开发一个与 CMMI 相对应的项目，尤其侧重于中小型企业。SPICE 是“<strong>S</strong>oftware <strong>P</strong>rocess <strong>I</strong>mprovement and <strong>C</strong>apability d<strong>E</strong>termination” 的缩写。即使软件开发是当时计划的主要驱动力，SPICE 中的“S”如今也被用于整个系统开发。</p>
+<p>该项目非常成功，最后，ISO 发布了标准系列 ISO 15504-x，以支持未来各种领域的特定标准的发展。同时，该标准的大部分部分已被 ISO 330xx 系列所取代，有多种工艺评估模型可供选择。SPICE的重点已经扩展到所有基于软件的系统以及操作和维护过程。</p>
+<div class="section" id="automotive-spice">
+<h3>Automotive SPICE®<a class="headerlink" href="#automotive-spice" title="永久链接至标题">¶</a></h3>
+<p>Automotive SPICE® 是国际标准 ISO/IEC 15504 (SPICE) 的一个领域特定的适应。Automotive SPICE® 的目的是评估过程能力。它主要用于评价汽车控制单元供应商的开发过程。</p>
+<p>如果您需要访问原始定义标准，请访问 <a class="reference external" href="http://www.automotivespice.com/">Automotivespice.com</a>。Automotive SPICE 是 VDA-QMC 的注册商标。</p>
+</div>
+</div>
 <div class="section" id="id1">
-<h2><a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<h2>Automotive SPICE 过程评估/参考模型<a class="headerlink" href="#id1" title="永久链接至标题">¶</a></h2>
+<p>参考：<a class="reference external" href="http://www.automotivespice.com/fileadmin/software-download/AutomotiveSPICE_PAM_31_Chinese.pdf">Automotive SPICE 过程评估/参考模型</a> &amp; <a class="reference external" href="https://ww2.mathworks.cn/content/dam/mathworks/mathworks-dot-com/company/events/conferences/automotive-conference-china/2020/aspice-compliant-software-development.pdf">符合ASPICE标准的汽车软件开发过程介绍</a>。</p>
+<ul class="simple">
+<li><p><strong>ASPICE</strong>：重在流程改进，包含系统及软件，但不包括硬件、生产等。（提出做什么）</p></li>
+<li><p><strong>功能安全</strong>：ISO26262 重在安全，包含系统、硬件、软件、生产等。（提出怎么做）</p></li>
+</ul>
+<p><img alt="img" src="_images/1629275565990.png" /></p>
+<p><img alt="" src="_images/1629277760178.png" /></p>
+<div class="section" id="id2">
+<h3>术语<a class="headerlink" href="#id2" title="永久链接至标题">¶</a></h3>
+<dl class="simple myst">
+<dt>CAN</dt><dd><p>Controller Area Network，控制器局域网络</p>
+</dd>
+<dt>CASE</dt><dd><p>Computer-Aided Software Engineering，计算机 辅助软件工程</p>
+</dd>
+<dt>CCB</dt><dd><p>Change Control Board，变更控制委员会</p>
+</dd>
+<dt>CFP</dt><dd><p>Call For Proposals，提案征集书</p>
+</dd>
+<dt>CPU</dt><dd><p>Central Processing Unit，中央处理器</p>
+</dd>
+<dt>ECU</dt><dd><p>Electronic Control Unit，电子控制单元</p>
+</dd>
+<dt>EEPROM</dt><dd><p>Electrically Erasable Programmable Read-Only Memory，电子可擦写编程只读内存</p>
+</dd>
+<dt>GP</dt><dd><p>Generic Practice，通用实践</p>
+</dd>
+<dt>GR</dt><dd><p>Generic Resource，通用资源</p>
+</dd>
+<dt>IEC</dt><dd><p>International Electrotechnical Commission，国际电工学委员会</p>
+</dd>
+<dt>IEEE</dt><dd><p>Institute of Electrical and Electronics Engineers，电气与电子工程师协会</p>
+</dd>
+<dt>I/O</dt><dd><p>Input / Output，输入/输出</p>
+</dd>
+<dt>ISO</dt><dd><p>International Organization for Standardization，国际标准化组织</p>
+</dd>
+<dt>ITT</dt><dd><p>Invitation To Tender，招标</p>
+</dd>
+<dt>LIN</dt><dd><p>Local Interconnect Network，内部互联网络</p>
+</dd>
+<dt>MISRA</dt><dd><p>Motor Industry Software Reliability Association，汽车产业软件可靠性协会</p>
+</dd>
+<dt>MOST</dt><dd><p>Media Oriented Systems Transport，多媒体定向系统传输</p>
+</dd>
+<dt>PA</dt><dd><p>Process Attribute，过程属性</p>
+</dd>
+<dt>PAM</dt><dd><p>Process Assessment Model，过程评估模型。适用于嵌入式车载系统开发的过程能力执行符合性评估。</p>
+</dd>
+<dt>PRM</dt><dd><p>Process Reference Model，过程参考模型</p>
+</dd>
+<dt>PWM</dt><dd><p>Pulse Width Modulation，脉冲宽度调制</p>
+</dd>
+<dt>RAM</dt><dd><p>Random Access Memory，随机存取内存</p>
+</dd>
+<dt>ROM</dt><dd><p>Read Only Memory，只读内存</p>
+</dd>
+<dt>SPICE</dt><dd><p>Software Process Improvement and Capability dEtermination，软件过程改进和能力确定</p>
+</dd>
+<dt>SUG</dt><dd><p>Spice User Group，Spice 用户群体</p>
+</dd>
+<dt>USB</dt><dd><p>Universal Serial Bus，通用串行总线</p>
+</dd>
+<dt>WP</dt><dd><p>Work Product，工作产品</p>
+</dd>
+<dt>WPC</dt><dd><p>Work Product Characteristic，工作产品特征</p>
+</dd>
+</dl>
+</div>
 </div>
 <div class="toctree-wrapper compound">
 </div>

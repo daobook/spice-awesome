@@ -32,14 +32,11 @@ Automotive SPICE(r) 是国际标准 ISO/IEC 15504 (SPICE) 的一个领域特定�
 CAN
 :	Controller Area Network，控制器局域网络
 
-
 CASE
 :	Computer-Aided Software Engineering，计算机 辅助软件工程
 
-
 CCB
 :	Change Control Board，变更控制委员会
-
 
 CFP
 :	Call For Proposals，提案征集书
@@ -50,39 +47,30 @@ CPU
 ECU
 :	Electronic Control Unit，电子控制单元
 
-
 EEPROM
 :	Electrically Erasable Programmable Read-Only Memory，电子可擦写编程只读内存
-
 
 GP
 :	Generic Practice，通用实践
 
-
 GR
 :	Generic Resource，通用资源
-
 
 IEC
 :	International Electrotechnical Commission，国际电工学委员会
 
-
 IEEE
 :	Institute of Electrical and Electronics Engineers，电气与电子工程师协会
-
 
 I/O
 :	Input / Output，输入/输出
 
-
 ISO
 :	International Organization for Standardization，国际标准化组织
-
 
 ITT
 
 :	Invitation To Tender，招标
-
 
 LIN
 :	Local Interconnect Network，内部互联网络
@@ -125,3 +113,20 @@ WP
 
 WPC
 :	Work Product Characteristic，工作产品特征
+
+### 过程能力确定
+
+![](image/index/1629422000515.png)
+
+每个过程都以**目的陈述**（关联着特定的成果清单）来描述。
+
+### 过程的概念
+
+![](image/index/1629424642954.png)
+
+## ASPICE 软件开发流程
+
+
+### 软件工程组（SWE）
+
+#### SWE.1 软件需求分析
